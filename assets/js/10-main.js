@@ -5,40 +5,39 @@ $(document).ready(function() {
 // at start
 -------------------------------------------------*/
 
-// _addClass();
-_fullBackground();
-_scrollTo();
-_onePageNav();
-_scrollUp();
-_appear();
+
+//_addClass();
 //_accordion();
-//_setWidth();
 //_addClassAnimated();
-//_mPlace();
-//_toolTips();
+_appear();
 //_appearAnimation();
-//_prettyPhoto();
-//_toggle();
-//_nav();
+_browseButton();
+//_cycleAfter();
+//_distanceCalc();
 //_filter();
-//_oneWorkWidth();
+//_flexslider();
+//_forceHeight_map();
+//_forceWidth_1();
+//_forceWidth_slide();
+_fullBackground();
 //_gMap();
 //_gMap3();
-//_forceWidth_1();
-//_forceHeight_map();
-//_forceWidth_slide();
 //_hideMenu();
-//_cycleAfter();
-//_mouseTeamHover();
-//_mouseLangHover();
-//_tooTips();
-//_flexslider();
-//_reorder();
 //_lazyLoad();
-//_distanceCalc();
-_browseButton();
-
-
+//_mouseLangHover();
+//_mouseTeamHover();
+//_mPlace();
+//_nav();
+_onePageNav();
+//_oneWorkWidth();
+//_prettyPhoto();
+//_reorder();
+_scrollTo();
+_scrollUp();
+//_setWidth();
+//_toggle();
+//_toolTips();
+//_tooTips();
 
 
 
@@ -147,19 +146,6 @@ function _forceWidth_slide(){
 
 
 
-
-/*-------------------------------------------------
-// tooltips
--------------------------------------------------*/
-
-function _tooTips(){
-	$(".teamPhoto").tooltip({
-	  'selector': '',
-	  'placement': 'top'
-	});
-
-}
-
 /*-------------------------------------------------
 // mouse enter / leave
 -------------------------------------------------*/
@@ -251,8 +237,6 @@ function _scrollTo(){
 		duration: 1000,
 		easing: 'easeInOutExpo' //(see http://easings.net/)
 	});
-
-
 }
 
 
@@ -595,35 +579,27 @@ $(document).ready(
 function _appear(){
 
 	jQuery('.animated-ed').appear();
-
 	$(document.body).on('appear', '.bounceInRight', function() {
 		$(this).each(function(){jQuery(this).addClass('animated-bounceInRight') });
 	});
-
 	$(document.body).on('appear', '.flip', function() {
 		$(this).each(function(){jQuery(this).addClass('animated-flip') });
 	});
-
 	$(document.body).on('appear', '.slide', function() {
 		$(this).each(function(){jQuery(this).addClass('animated-slide') });
 	});
-
 	$(document.body).on('appear', '.bounceInDown', function() {
 		$(this).each(function(){jQuery(this).addClass('animated-bounceInDown') });
 	});
-
 	$(document.body).on('appear', '.bounceInLeft', function() {
 		$(this).each(function(){jQuery(this).addClass('animated-bounceInLeft') });
 	});
-
 	$(document.body).on('appear', '.bounceIn', function() {
 		$(this).each(function(){jQuery(this).addClass('animated-bounceIn') });
 	});
-
 	$(document.body).on('appear', '.puffIn', function() {
 		$(this).each(function(){jQuery(this).addClass('animated-puffIn') });
 	});
-
 	$(document.body).on('appear', '.holeIn', function() {
 		$(this).each(function(){jQuery(this).addClass('animated-holeIn') });
 	});
@@ -642,21 +618,7 @@ function _appear(){
 function _onePageNav(){
 	$('#menu').onePageNav({
 		currentClass: 'current',
-		changeHash: true,
-/*		scrollSpeed: 1,
-		scrollOffset: 30,
-		scrollThreshold: 0.5,
-		filter: '',
-		easing: 'swing',
-		begin: function() {
-			//I get fired when the animation is starting
-		},
-		end: function() {
-			//I get fired when the animation is ending
-		},
-		scrollChange: function($currentListItem) {
-			//I get fired when you enter a section and I pass the list item of the section
-		}*/
+		changeHash: false
 	});
 }
 

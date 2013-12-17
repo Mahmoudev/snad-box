@@ -2,10 +2,10 @@
 	Grid System
 -----------------------------------------------*/
 
-.grid{
+.row{
   margin: 0;
 }
-.grid:after {
+.row:after {
   content: "";
   display: table;
   clear: both;
@@ -20,7 +20,7 @@
   width: 100%
 }
 
-.grid [class*='col-']:last-of-type {
+.row [class*='col-']:last-of-type {
   padding-right: 0;
 }
 
