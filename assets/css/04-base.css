@@ -1,0 +1,198 @@
+/*-----------------------------------------------
+	Defualt Classes
+-----------------------------------------------*/
+
+.disabled {
+	pointer-events: none;
+	opacity: 0.3;
+	cursor: default;
+}
+
+.left {
+	float:left;
+}
+body.ar .left{
+	float:right;
+}
+.right {
+	float:right;
+}
+body.ar .right {
+	float:left;
+}
+
+.clear {
+	clear: both;
+}
+.hidden, .mobile{
+	display: none !important;
+}
+
+/*-----------------------------------------------
+	colors
+-----------------------------------------------*/
+.reverse{
+	color: #fff;
+}
+
+
+
+/*-----------------------------------------------
+	Links
+-----------------------------------------------*/
+
+a:link, a:visited, a:active, a:focus {
+	text-decoration:none;
+	background: none;
+}
+
+
+
+/*-----------------------------------------------
+	Buttons
+-----------------------------------------------*/
+.btn, .btn:link, .btn:visited, .btn:active, .btn:focus{
+	height: 40px;
+	line-height:40px;
+	color:#fff;
+	padding:0 15px;
+	cursor:pointer;
+	display:inline-block;
+	border:0;
+	text-transform:uppercase;
+	-webkit-transition : all 0.2s ease-out;
+	-moz-transition : all 0.2s ease-out;
+	-o-transition :all 0.2s ease-out;
+	transition : all 0.2s ease-out;
+	-webkit-transform: translateZ(0);
+}
+
+.btn:hover {
+	opacity:0.5;
+}
+
+.btn i {
+	margin:0 10px 0 0;
+	float: left;
+}
+body.ar .btn i {
+	padding:0 0 0 10px;
+	float: right;
+}
+
+
+
+/*-----------------------------------------------
+	Preloader
+-----------------------------------------------*/
+
+/*It should be on the head tag*/
+
+
+
+
+
+
+
+/*-----------------------------------------------
+	Scroll to top
+-----------------------------------------------*/
+
+#scrollUp{
+	bottom: 20px;
+	right: 20px;
+	padding: 10px 20px;
+	background: #555;
+	color: #fff;
+}
+
+
+
+
+/*-----------------------------------------------
+	ModalBox
+-----------------------------------------------*/
+
+.modal-box {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	pointer-events: none;
+}
+	.modal-box.active {
+		opacity:1;
+		pointer-events: auto;
+	}
+
+	.modal-box > div {
+		width: 400px;
+		position: relative;
+		margin: 10% auto;
+		padding: 30px 30px 20px 30px;
+		background: #fff;
+	}
+
+
+	.modal-box .close {
+		background:#d50000;
+		color: #FFF;
+		position: absolute;
+		right: 0px;
+		top:0;
+		text-align: center;
+		width:30px;
+		height:30px;
+		line-height:30px;
+	}
+	body.ar .modal-box .close {
+		right: auto;
+		left: 0;
+
+	}
+	.modal-box .close:hover {
+		background: #0089DD;
+	}
+
+
+
+
+/*-----------------------------------------------
+	Social Links
+-----------------------------------------------*/
+
+a.facebook-icon:hover { background-color: #0E59A0 !important; }
+a.twitter-icon:hover { background-color: #0EA4FF !important; }
+a.vimeo-icon:hover { background-color: #63879C !important; }
+a.flickr-icon:hover { background-color: #0061DB !important; }
+a.github-icon:hover { background-color: #3B3B3B !important; }
+a.googleplus-icon:hover { background-color: #282927 !important; }
+a.pinterest-icon:hover { background-color: #D73532 !important; }
+a.tumblr-icon:hover { background-color: #586980 !important; }
+a.linkedin-icon:hover { background-color: #018FAF !important; }
+a.dribble-icon:hover { background-color: #EA73A0 !important; }
+a.stumbleupon-icon:hover { background-color: #EA4B24 !important; }
+a.lastfm-icon:hover { background-color: #B80638 !important; }
+a.instagram-icon:hover { background-color: #82685A !important; }
+a.evernote-icon:hover { background-color: #3BAB27 !important; }
+a.skype-icon:hover { background-color: #00B0F6 !important; }
+a.paypal-icon:hover { background-color: #0D3967 !important; }
+a.soundcloud-icon:hover { background-color: #E9702B !important; }
+a.behance-icon:hover { background-color: #0066FF !important; }
+a.rss-icon:hover { background-color: #F79638 !important; }
+
+
+
+
+
+
+
+
+
+
+
+

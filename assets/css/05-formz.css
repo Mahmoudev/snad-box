@@ -1,0 +1,299 @@
+
+/*=====================================================================================
+	Formz v2
+	Author: Mahmoud Zadah
+=====================================================================================*/
+
+
+.formz:after, .formz div:after, .formz ol:after, .formz ul:after, .formz li:after, .formz dl:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+	overflow: hidden;
+}
+
+.formz .btn, .formz .btn:link, .formz .btn:visited, .formz .btn:active, .formz .btn:focus {
+	margin: 0;
+}
+
+.formz {
+	margin: 0;
+	padding: 0;
+}
+
+.formz [class*='col-'] {
+	padding: 10px 20px;
+}
+
+.formz fieldset {
+	border: 1px solid #d4d4d4;
+	position: relative;
+	height: 100%;
+	padding: 1.2em 0;
+	margin: 0 0 4em;
+}
+
+.formz legend, .formz address {
+	margin-left: 1%;
+	margin-right: 1%;
+	padding: 0 20px;
+	font-size: 24px;
+	line-height:
+}
+
+.formz li {
+	background: none !important;
+	padding: 0 !important;
+}
+
+/* first item */
+.formz .alpha {
+	margin-left: 0;
+}
+/* last item */
+.formz .omega {
+	margin-right: 0;
+}
+
+/* input without label */
+.formz-no-lbl {
+	position: relative;
+	padding-bottom: 0;
+}
+/* input without label */
+.formz-no-lbl input, .formz-no-lbl label, .formz-no-lbl span, .formz-no-lbl ul, .formz-no-lbl p {
+	position: absolute;
+	bottom: 0;
+}
+/* multiple containers inside field-grid */
+.formz .left {
+	clear: none;
+	float: left !important;
+	margin-right: 20px !important;
+}
+
+.formz .right {
+	clear: none;
+	float: right !important;
+	margin-left: 0.3em !important;
+}
+/* form elements  */
+
+.formz .formz-txt, .formz input[type="text"], .formz input[type="password"], .formz input[type="file"], .formz textarea, .formz select {
+	vertical-align: middle;
+	line-height: 20px;
+	width: 100%;
+	height: 40px;
+	padding: 10px;
+	border-style: solid;
+	border-width: 1px;
+	/*ie7*/
+	*width: 99%;
+}
+
+.formz textarea {
+	height: 10em;
+	resize: vertical;
+}
+
+.formz select {
+	padding: 10px;
+}
+
+.formz-list .formz-lbl, .formz-list label {
+	display: inline;
+	height: auto;
+}
+
+
+.formz-msg-info, .formz-msg-warning, .formz-msg-error, .formz-msg-success {
+	padding: 20px 20px 10px 20px;
+	/*padding: 20px;*/
+	border: 1px solid #ccc;
+	display: block;
+	height: auto;
+	margin: 20px;
+	clear: both;
+}
+
+.formz-msg-info li, .formz-msg-warning li, .formz-msg-error li, .formz-msg-success li {
+	list-style: none;
+	padding: 0;
+	margin-bottom: 5px;
+	line-height: 20px;
+	vertical-align: top;
+}
+
+.formz-msg-info i, .formz-msg-warning i, .formz-msg-error i, .formz-msg-success i {
+	font-size: 24px;
+}
+/* form button  */
+.formz-button, .formz input[type="submit"], .formz input[type="button"], .formz input[type="reset"] {
+	cursor: pointer;
+	text-align: center;
+	display: inline-block;
+}
+/* lista de chk e rdo */
+.formz-list {
+	height: 100%;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.formz-list li {
+	margin: 1% 1% 1% !important;
+	padding: 0 !important;
+	float: left;
+	display: inline-block;
+	list-style: none;
+}
+	.formz-list li:first-of-type  {
+		margin-left: 0 !important;
+	}
+
+
+
+.formz-list input {
+	margin-right: 5px;
+}
+/* input size */
+.formz-small {
+	width: 30% !important;
+	float: left;
+	margin-right: 10px;
+	display: inline;
+	/*ie7*/
+	*width: 25% !important;
+}
+
+.formz-medium {
+	width: 50% !important;
+	float: left;
+	margin-right: 10px;
+	display: inline;
+	/*ie7*/
+	*width: 45% !important;
+}
+
+.formz fieldset {
+	background: #fff;
+	/*corner
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	*/;
+}
+
+
+
+/* Form legend and titles */
+.formz legend, .formz h5 {
+	line-height: 30px;
+	color: #2b2b2b;
+}
+/* form elements  */
+.formz-lbl, .formz label {
+	color: #2b2b2b;
+	line-height: 20px;
+	vertical-align: middle;
+	display: block;
+	height: auto;
+	padding: 0 0 2px 0;
+}
+
+.formz-req {
+	font-weight: bold;
+	color: #d10000;
+	line-height: 20px;
+	font-style: normal;
+	padding: 0 3px;
+}
+
+.formz .formz-txt, .formz input[type="text"], .formz input[type="password"], .formz input[type="file"], .formz textarea, .formz select {
+	border-color: #c6c6c6 #dadada #eaeaea;
+	background: #fafafa;
+	color: #999;
+}
+
+.formz select {
+	border-color: #c6c6c6 #dadada #eaeaea;
+	background: #fafafa;
+	color: #999;
+	height: 40px;
+}
+
+.formz select option {
+	height: 30px;
+	padding: 10px;
+}
+
+.formz .formz-txt:hover, .formz input[type="text"]:hover, .formz input[type="password"]:hover, .formz input[type="file"]:hover, .formz textarea:hover, .formz select:hover {
+	color: #666;
+	background: #fff none;
+	border-color: #c6c6c6;
+}
+
+form .formz-txt:focus, .formz input[type="text"]:focus, .formz input[type="password"]:focus, .formz input[type="file"]:focus, .formz textarea:focus, .formz select:focus {
+	color: #333;
+	background: #fff none;
+	border-color: #659ec9 #70aedd #a8cfec;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,0.6);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,0.6);
+	border-color: #66afe9;
+}
+}
+/* form msg status  */
+.formz-msg-info, .formz-msg-warning, .formz-msg-error, .formz-msg-success {
+	color: #2b2b2b;
+}
+
+.formz-msg-info h5, .formz-msg-warning h5, .formz-msg-error h5, .formz-msg-success h5 {
+	/*line-height: 20px;*/
+	/*margin-bottom: 10px;*/
+}
+
+.formz-msg-info {
+	background: #d1ecf7 url(../img/form-ic-info.png) no-repeat 12px 23px;
+	border-color: #bcdfef;
+}
+
+.formz-msg-warning {
+	background: #fff6bf url(../img/form-ic-warning.png) no-repeat 12px 23px;
+	border-color: #fceb77;
+}
+
+.formz-msg-error {
+	background: #fad0d0
+	/*url(../img/form-ic-error.png) no-repeat 12px 23px*/;
+	border-color: #f6abab;
+}
+
+.formz-msg-success {
+	background: #e5f8ce url(../img/form-ic-success.png) no-repeat 12px 23px;
+	border-color: #d0f1a6;
+}
+
+.formz-msg-success strong, .formz-msg-success a, .formz-msg-success i {
+	color: #62b548;
+}
+
+.formz-msg-info strong, .formz-msg-info a, .formz-msg-info i {
+	color: #11689e;
+}
+
+.formz-msg-warning strong, .formz-msg-warning a, .formz-msg-warning i {
+	color: #957210;
+}
+
+.formz-msg-error strong, .formz-msg-error a, .formz-msg-error i {
+	color: #b01717;
+}
+/* form validation */
+.formz-error {
+	border-color: #FAD0D0 !important;
+	color: #b01717 !important;
+}

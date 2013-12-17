@@ -1,0 +1,150 @@
+
+/*-----------------------------------------------
+	Colors
+-------------------------------------------------
+
+	red:		#C8212D; 215,35,50
+	gray:		#959CA1;
+	gray+:		#6D6E71;
+	gray++:		#373737;
+	black:		#000;
+
+	light1		#E3E3E3
+	light2		#F4F4F4
+	light3		#E9E9E9
+
+
+
+
+/*-----------------------------------------------
+	Links
+-----------------------------------------------*/
+
+a:link, a:visited, a:active, a:focus {
+	text-decoration:none;
+	color: #6D6E71;
+}
+
+a:link:hover, a:visited:hover, a:active:hover, a:focus:hover {
+	/*color: #C8212D;*/
+}
+
+
+.btn, .btn:link, .btn:visited, .btn:active, .btn:focus{
+	background: #C8212D
+}
+
+
+.btn.back{
+	background:#6A747A;
+	color:#fff;
+	border:0;
+}
+
+.btn.read-more{
+	background:#fff;
+	border: 1px solid #d5d5d5;
+	color: #4B5358;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color:#6D6E71
+}
+
+
+
+/*=====================================================================================
+	Sections
+=====================================================================================*/
+
+/*---------------------------------------------------------
+	Nav
+---------------------------------------------------------*/
+
+nav{
+	padding: 20px;
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	z-index: 100;
+
+}
+#menu li{
+	list-style: none;
+	background: #000;
+	display: inline-block;
+}
+
+#menu li a{
+	color: #fff;
+	display: block;
+	padding: 20px;
+}
+#menu li.current a{
+	color: red;
+}
+
+
+
+
+
+/*---------------------------------------------------------
+	Main
+---------------------------------------------------------*/
+
+#main{
+	height: 100%;
+	width: 100%;
+	position: relative;
+	top: 70px;
+}
+
+
+
+.wrap{
+	width: 700px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.page{
+	padding: 20px;
+	display: inline-block;
+}
+
+	.page h1{
+		margin: 20px 10px;
+		background: #fff;
+		padding: 20px;
+	}
+
+
+.box{
+	color: #fff;
+	/*background: rgba(0,0,0,0.9);*/
+	background: #000;
+	padding: 20px;
+	margin: 0 10px 20px 10px;
+}
+
+#bg {
+	z-index: -1 !important;
+}
+
+
+
+
+
+/*---------------------------------------------------------
+	Footer
+---------------------------------------------------------*/
+
+#copy{
+	background: rgba(0,0,0,0.9);
+	height: 45px;
+	width: 100%;
+	color: #fff;
+	text-align: center;
+	padding: 15px;
+
+}

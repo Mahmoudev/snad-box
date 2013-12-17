@@ -1,0 +1,43 @@
+/*
+
+@font-face {
+	font-family: 'geDinarMed';
+	src: url('../fonts/ge-dinar-med.eot');
+	src: url('../fonts/ge-dinar-med.eot') format('embedded-opentype'),
+		 url('../fonts/ge-dinar-med.woff') format('woff'),
+		 url('../fonts/ge-dinar-med.ttf') format('truetype'),
+		 url('../fonts/ge-dinar-med.svg#geDinarMed') format('svg');
+}
+
+
+@font-face {
+    font-family: 'AlMohanad';
+    src: url('../fonts/al-mohanad.eot');
+    src: url('../fonts/al-mohanad.eot') format('embedded-opentype'),
+         url('../fonts/al-mohanad.woff') format('woff'),
+         url('../fonts/al-mohanad.ttf') format('truetype');
+}
+
+
+h1, h2, h3, h4, h5, h6,.btn {
+	font-family:"geDinarMed", Arial, Helvetica, Tahoma, sans-serif;
+}
+h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong {
+}
+
+
+body {
+	font-family:"AlMohanad", Arial, Helvetica, Tahoma, sans-serif;
+	font-size: 18px;
+}
+
+
+h1 { font-size: 62px; line-height: 66px; }
+h2 { font-size: 44px; line-height: 48px; }
+h3 { font-size: 40px; line-height: 44px; }
+h4 { font-size: 26px; line-height: 42px; }
+h5 { font-size: 20px; line-height: 30px; }
+h6 { font-size: 18px; line-height: 24px; }
+p  { line-height:22px; }
+
+*/

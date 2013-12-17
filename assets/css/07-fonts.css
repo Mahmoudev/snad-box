@@ -1,0 +1,113 @@
+/*=====================================================================================
+	Typography
+=====================================================================================*/
+
+
+@font-face {
+	font-family: 'Swis72';
+	src: url('../fonts/swissck.eot');
+	src: url('../fonts/swissck.eot') format('embedded-opentype'),
+		 url('../fonts/swissck.woff') format('woff'),
+		 url('../fonts/swissck.ttf') format('truetype'),
+		 url('../fonts/swissck.svg#Swis72') format('svg');
+}
+
+
+/*
+@font-face {
+	font-family: 'dinRegular';
+	src: url('../fonts/din-regular.eot');
+	src: url('../fonts/din-regular.eot') format('embedded-opentype'),
+		 url('../fonts/din-regular.woff') format('woff'),
+		 url('../fonts/din-regular.ttf') format('truetype');
+}
+*/
+
+
+ h1, h2, h3, h4, h5, h6, legend, .btn {
+	font-family:"Swis72", Arial, Helvetica, Tahoma, sans-serif;
+	text-transform: uppercase;
+	/*-webkit-text-stroke: 0.35px*/
+}
+
+h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong {
+}
+
+
+
+/*---------------------------------------------------------
+	Text sizes
+---------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 300;
+	margin-bottom: 10px;
+	color:#000
+}
+
+h1 { font-size: 62px; line-height: 66px; }
+h2 { font-size: 44px; line-height: 48px; }
+h3 { font-size: 40px; line-height: 44px; }
+h4 { font-size: 26px; line-height: 42px; }
+h5 { font-size: 20px; line-height: 30px; }
+h6 { font-size: 18px; line-height: 24px; }
+p  { line-height:22px; margin:0 0 10px 0;}
+i  { font-style:normal; }
+
+
+
+/*------ 12 ------*/
+.temp {
+	font-size:12px;
+}
+
+
+/*------ 14 ------*/
+.temp {
+	font-size:14px;
+}
+
+
+/*------ 16 ------*/
+.temp {
+	font-size:16px;
+}
+
+
+/*------ 18 ------*/
+.temp {
+	font-size:18px;
+}
+
+
+
+
+
+
+/*---------------------------------------------------------
+	Icons sizes
+---------------------------------------------------------*/
+
+/*------ 18 ------*/
+.temp i {
+	font-size: 18px;
+}
+
+/*------ 30 ------*/
+.temp i {
+	font-size: 28px;
+}
+/*------ 60 ------*/
+.temp i {
+	font-size:60px;
+}
+
+/*------ 96 ------*/
+.temp i {
+	font-size:96px;
+}
+
+/*------ 160 ------*/
+.temp i {
+	font-size: 160px;
+}
