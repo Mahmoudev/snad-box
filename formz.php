@@ -9,7 +9,7 @@
 
 				<!-- row -->
 				<div class="col-1-2">
-					<label>First Name<em class="animated formz-req">*</em></label>
+					<label>First name<em class="animated formz-req">*</em></label>
 					<input class="animated" type="text" name="" placeholder="Please enter your first name" required/>
 				</div>
 				<div class="col-1-2">
@@ -31,7 +31,7 @@
 
 				<!-- row -->
 				<div class="col-1-1">
-					<label>Message<em class="animated formz-req">*</em></label>
+					<label>Message</label>
 					<textarea class="animated" rows="" cols=""></textarea>
 				</div>
 
@@ -39,7 +39,6 @@
 				<div class="col-1-1">
 					<button class="animated right btn" onclick="$(this).closest('form').parsley('validate');">Submit</button>
 				</div>
-
 			</fieldset>
 		</form>
 
@@ -49,16 +48,16 @@
 		<form class="formz" action="" parsley-validate novalidate >
 			<!-- media request-->
 			<fieldset>
-				<legend>Media Requests</legend>
+				<legend>FORM SAMPLE 2</legend>
 
 				<!-- row -->
 				<div class="col-1-3">
 					<label>Publishing date<em class="animated formz-req">*</em></label>
-					<input class="animated" type="text" name="" placeholder="Fill up the field" required/>
+					<input class="animated" type="text" name="" placeholder="Fill up the field" required parsley-error-message="*** You must enter a name ***" parsley-error-container="#errors-box p"/>
 				</div>
 				<div class="col-1-3">
 					<label>Publishing date<em class="animated formz-req">*</em></label>
-					<input class="animated" type="text" name="" placeholder="Fill up the field" required/>
+					<input class="animated" type="text" name="" placeholder="Fill up the field" required parsley-error-message="*** You must enter a name ***" parsley-error-container="#errors-box p"/>
 				</div>
 				<div class="col-1-3">
 					<label>Is it urgent?<em class="animated formz-req">*</em></label>
@@ -67,6 +66,16 @@
 						<li><label><input name="radio-01" type="radio"/>No</label></li>
 					</ul>
 				</div>
+
+				<!-- row -->
+				<div id="errors-box" class="col-1-1">
+					<div class="animated formz-msg-error">
+						<i class="animated fontawesome-remove left"></i>
+						<h5>Error</h5>
+						<p></p>
+					</div>
+				</div>
+
 
 				<!-- row -->
 				<div class="col-1-1">

@@ -324,25 +324,22 @@ form .formz-txt:focus, .formz input[type="text"]:focus, .formz input[type="passw
 
 /* form validation */
 .formz-error, .parsley-error {
-	border-color: #C8212D !important;
+	border-color: #F57C85  !important;
 	color: #C8212D !important;
 }
 
 .parsley-error:focus {
-	border-color: #C8212D !important;
+	border-color: #F57C85  !important;
 	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(200,30,30,0.6) !important;
 	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(200,30,30,0.6) !important;
 }
 
 
 .formz li.required, .parsley-error-list li{
-	background: #FAD0D0;
+	background: #FFDDDD;
 	padding: 3px 10px !important;
 	color: #000;
 	display: table !important;
-}
-.parsley-error-list li{
-	background: #FFF6BF;
 }
 
 
