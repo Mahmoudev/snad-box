@@ -19,6 +19,7 @@ _browseButton();
 //_forceHeight_map();
 //_forceWidth_1();
 //_forceWidth_slide();
+_formsClear();
 _fullBackground();
 //_gMap();
 //_gMap3();
@@ -314,15 +315,14 @@ function _scrollUp(){
 // placeholder clear
 -------------------------------------------------*/
 
-function _placeholderClear(){
+function _formsClear(){
 	$('input[type="text"]').focus(function() {
-		$(this).attr('data-restore', $(this).attr('placeholder'));
 		$(this).attr('placeholder' , '');
 	});
 
-	$('input[type="text"]').blur(function() {
-		$(this).attr('placeholder', $(this).attr('data-restore'));
-	});
+/*	$('input[type="text"]').blur(function() {
+		$(this).attr('placeholder', $(this).attr('placeholder'));
+	});*/
 
 }
 

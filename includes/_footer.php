@@ -33,6 +33,8 @@ echo '
 
 	<script src="assets/js/02-scrollUp.js"></script>
 
+	<script src="assets/js/03-parsley.js"></script>
+
 	<script src="assets/js/03-localScroll.js"></script>
 
 	<script src="assets/js/03-onePageNav.js"></script>

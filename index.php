@@ -124,7 +124,7 @@
 
 		<div class="col-1-2 animated-ed bounceInLeft">
 			<div class="box">
-				<div class="grid">
+				<div class="row">
 
 					<div class="col-1-4">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>

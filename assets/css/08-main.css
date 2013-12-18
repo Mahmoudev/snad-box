@@ -22,7 +22,11 @@
 
 a:link, a:visited, a:active, a:focus {
 	text-decoration:none;
-	color: #6D6E71;
+	color: #C8212D;
+}
+
+fieldset a:link{
+	border-bottom: 1px dotted #C8212D;
 }
 
 a:link:hover, a:visited:hover, a:active:hover, a:focus:hover {
