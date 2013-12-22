@@ -1,5 +1,39 @@
-$(document).ready(function() {
+jQuery(document).ready(function(){
+	$('#contactform').submit(function(){
+		var action = $(this).attr('action');
+		$("#message").slideUp(750,function() {
+			$('#message').hide();
+			$('#submit')
+			.after('<img src="assets/images/css/ajax-loader.gif" class="loader" />')
+			.attr('disabled','disabled');
 
+			$.post(action, {
+				name: $('#name').val(),
+				email: $('#email').val(),
+				phone: $('#phone').val(),
+				subject: $('#subject').val(),
+				comments: $('#comments').val(),
+				verify: $('#verify').val()
+			},
+			function(data){
+				document.getElementById('message').innerHTML = data;
+				$('#message').slideDown('slow');
+				$('#contactform img.loader').fadeOut('slow',function(){$(this).remove()});
+				$('#submit').removeAttr('disabled');
+				if(data.match('success') != null) $('#contactform').slideUp('slow');
+			}
+			);
+
+		});
+		return false;
+	});
+});
+
+
+
+
+
+$(document).ready(function() {
 
 /*-------------------------------------------------
 // at start
@@ -21,6 +55,7 @@ _browseButton();
 //_forceWidth_slide();
 _formsClear();
 _fullBackground();
+_gmapNative();
 //_gMap();
 //_gMap3();
 //_hideMenu();
@@ -55,6 +90,248 @@ $(window).on("debouncedresize", function(event) {
 	// setWidth();
 	// setHeight();
 });
+
+
+
+
+
+
+
+/*-------------------------------------------------
+// Maps Native
+-------------------------------------------------*/
+
+function _gmapNative() {
+
+	/*----------- vars ---------------*/
+
+	var marker;
+	var markers = new Array();
+	var iconCounter = 0;
+	var MY_MAPTYPE_ID = 'custom_style';
+
+
+
+	/*----------- locations + icons + shaow ---------------*/
+
+	var locations = [
+		['<h4>Dubai</h4>', 25.271139, 55.307485],
+		['<h4>Sharjah</h4>', 25.357522, 55.391865]
+	];
+
+	var iconURLPrefix = 'http://maps.google.com/mapfiles/ms/icons/';
+
+	var icons = [
+		iconURLPrefix + 'red-dot.png',
+		iconURLPrefix + 'yellow-dot.png'
+	]
+	var icons_length = icons.length;
+
+
+	var shadow = {
+		anchor: new google.maps.Point(15, 33),
+		url: iconURLPrefix + 'msmarker.shadow.png'
+	};
+
+
+
+
+	/*----------- map options---------------*/
+
+	var map = new google.maps.Map(document.getElementById('googleMap'), {
+		zoom: 10,
+		center: new google.maps.LatLng(-37.92, 151.25),
+		mapTypeId: google.maps.MapTypeId.ROADMAP,
+		mapTypeControl: false,
+		scrollwheel: false,
+		streetViewControl: false,
+		panControl: false,
+		//disableDefaultUI: true,
+		zoomControlOptions: {
+			//position: google.maps.ControlPosition.LEFT_BOTTOM
+			style: google.maps.ZoomControlStyle.SMALL
+		},
+	    mapTypeControlOptions: {
+	      mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
+	    },
+	    mapTypeId: MY_MAPTYPE_ID
+	});
+
+
+
+	/*----------- infowindow options---------------*/
+
+	var infowindow = new google.maps.InfoWindow({
+		maxWidth: 160
+	});
+
+
+
+	/*----------- styles ---------------*/
+
+	var featureOpts = [
+	{
+		"featureType": "water",
+		"stylers": [
+		{
+			"color": "#46bcec"
+		},
+		{
+			"visibility": "on"
+		}
+		]
+	},
+	{
+		"featureType": "landscape",
+		"stylers": [
+		{
+			"color": "#f2f2f2"
+		}
+		]
+	},
+	{
+		"featureType": "road",
+		"stylers": [
+		{
+			"saturation": -100
+		},
+		{
+			"lightness": 45
+		}
+		]
+	},
+	{
+		"featureType": "road.highway",
+		"stylers": [
+		{
+			"visibility": "simplified"
+		}
+		]
+	},
+	{
+		"featureType": "road.arterial",
+		"elementType": "labels.icon",
+		"stylers": [
+		{
+			"visibility": "off"
+		}
+		]
+	},
+	{
+		"featureType": "administrative",
+		"elementType": "labels.text.fill",
+		"stylers": [
+		{
+			"color": "#444444"
+		}
+		]
+	},
+	{
+		"featureType": "transit",
+		"stylers": [
+		{
+			"visibility": "off"
+		}
+		]
+	},
+	{
+		"featureType": "poi",
+		"stylers": [
+		{
+			"visibility": "off"
+		}
+		]
+	}
+	];
+
+
+
+
+	/****** Execute ******/
+
+	for (var i = 0; i < locations.length; i++) {
+
+		/*---- position ----*/
+		marker = new google.maps.Marker({
+			position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+			map: map,
+			//animation: google.maps.Animation.DROP,
+			icon: icons[iconCounter],
+			shadow: shadow
+		});
+
+
+
+		/*---- marker ----*/
+		markers.push(marker);
+
+
+
+
+		/*---- style ----*/
+		var styledMapOptions = {
+			name: 'Custom Style'
+		};
+ 		var customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions);
+
+
+
+		/*---- window ----*/
+		google.maps.event.addListener(marker, 'click', (function (marker, i) {
+			return function () {
+				infowindow.setContent(locations[i][0]);
+				infowindow.open(map, marker);
+			}
+		})(marker, i));
+
+
+
+		/*---- icons ----*/
+		iconCounter++;
+		// We only have a limited number of possible icon colors, so we may have to restart the counter
+		if (iconCounter >= icons_length) {
+			iconCounter = 0;
+		}
+
+
+
+		/*---- style it ----*/
+		map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
+
+
+
+
+		/*---- center it ----*/
+		var bounds = new google.maps.LatLngBounds();
+		//  Go through each...
+		$.each(markers, function (index, marker) {
+			bounds.extend(marker.position);
+		});
+		//  Fit these bounds to the map
+		map.fitBounds(bounds);
+
+	}
+
+
+
+
+
+
+	/*----------- external controls ---------------*/
+
+	$("#menu").on("click", "#panLA", function () {
+		var laLatLng = new google.maps.LatLng(25.271139, 55.307485);
+		map.panTo(laLatLng);
+		//map.setZoom(15);
+	});
+	$("#menu").on("click", "#panLB", function () {
+		var laLatLng = new google.maps.LatLng(25.357522, 55.391865);
+		map.panTo(laLatLng);
+		//infowindow.open(map, marker); /*didn't work*/
+		//map.setZoom(15);
+	});
+
+}
 
 
 
@@ -365,9 +642,7 @@ if (document.location.href.match(/(contact-us)/)) {
 function _gMap3(){
 
 	$("#map").gmap3({
-		marker:{
-		latLng:[25.34352,55.38560],  options:{icon: "assets/images/css/marker.png"}
-	},
+		marker:{latLng:[25.34352,55.38560],  options:{icon: "assets/images/css/marker.png"}},
 		map:{
 		  options:{
 		styles: [ {

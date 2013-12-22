@@ -1,6 +1,6 @@
 <?php //header("Location: en/index.php");die();?>
 
-<?php $menupage="home"; include("includes/_header.php");?>
+<?php $menupage="home"; include("include/_header.php");?>
 
 <body>
 
@@ -31,8 +31,9 @@
 				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<p><a class="btn black" href="#">Button</a></p>
 				<a class="btn black" href="formz.php">FormZ</a>
+				<a class="btn black" href="404.php">404</a>
+				<a class="btn black" href="map.php">map</a>
 			</div><!-- end box -->
 		</div><!-- end col -->
 
@@ -176,5 +177,5 @@
 
 	</div><!-- end page -->
 
-<?php include("includes/_footer.php");?>
+<?php include("include/_footer.php");?>
 

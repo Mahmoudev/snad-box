@@ -6,6 +6,7 @@
 
 <div class="JS">
 	<script src="assets/js/01-jquery.js"></script>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 	<script>$(window).load(function() {$("#status").fadeOut();$("#preloader").delay(350).fadeOut("slow");})</script>
 
 

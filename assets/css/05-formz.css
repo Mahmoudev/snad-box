@@ -323,6 +323,13 @@ form .formz-txt:focus, .formz input[type="text"]:focus, .formz input[type="passw
 
 
 /* form validation */
+
+.formz img.loader{
+	width: 20px;
+	height: 20px;
+}
+
+
 .formz-error, .parsley-error {
 	border-color: #F57C85  !important;
 	color: #C8212D !important;
@@ -341,5 +348,8 @@ form .formz-txt:focus, .formz input[type="text"]:focus, .formz input[type="passw
 	color: #000;
 	display: table !important;
 }
+
+
+
 
 

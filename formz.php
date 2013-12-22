@@ -1,31 +1,31 @@
-<?php $menupage="home"; include("includes/_header.php");?>
+<?php $menupage="home"; include("include/_header.php");?>
 <body>
 	<div style="background:#fff; padding:50px;">
+
 		<!-- formz-->
-		<form class="formz" action="" parsley-validate novalidate >
-			<!-- form 1-->
+		<form class="formz" action="" novalidate >
 			<fieldset>
 				<legend>Form Sample 1</legend>
 
 				<!-- row -->
 				<div class="col-1-2">
-					<label>First name<em class="animated formz-req">*</em></label>
+					<label>First name<em class="formz-req">*</em></label>
 					<input class="animated" type="text" name="" placeholder="Please enter your first name" required/>
 				</div>
 				<div class="col-1-2">
-					<label>Last name<em class="animated formz-req">*</em></label>
+					<label>Last name<em class="formz-req">*</em></label>
 					<input class="animated" type="text" name="" placeholder="Please enter your first name" required/>
 				</div>
 
 				<!-- row -->
 				<div class="col-1-1">
-					<label>Email<em class="animated formz-req">*</em></label>
+					<label>Email<em class="formz-req">*</em></label>
 					<input class="animated" type="text" name="" placeholder="email@example.com" required parsley-type="email"/>
 				</div>
 
 				<!-- row -->
 				<div class="col-1-1">
-					<label>Phone<em class="animated formz-req">*</em></label>
+					<label>Phone<em class="formz-req">*</em></label>
 					<input class="animated" type="text" name="" placeholder="xxx-xxxx-xxxx" required parsley-type="phone">
 				</div>
 
@@ -44,6 +44,77 @@
 
 
 
+		<form method="post" action="include/_contact.php" name="contactform" id="contactform" class="formz">
+
+				<fieldset>
+					<legend>Please fill the form</legend>
+
+					<!-- row -->
+					<div class="col-1-1">
+						<label for="name" accesskey="U"><em class="formz-req">*</em>Your Name</label>
+						<input name="name" type="text" id="name" size="30" value="" class="animated"/>
+					</div>
+
+
+					<!-- row -->
+					<div class="col-1-1">
+						<label for="email" accesskey="E"><em class="formz-req">*</em>Email</label>
+						<input name="email" type="text" id="email" size="30" value="" class="animated"/>
+					</div>
+
+
+					<!-- row -->
+					<div class="col-1-1">
+						<label for="phone" accesskey="P"><em class="formz-req">*</em>Phone</label>
+						<input name="phone" type="text" id="phone" size="30" value="" class="animated"/>
+					</div>
+
+
+					<!-- row -->
+					<div class="col-1-1">
+						<label for="subject" accesskey="S">Subject</label>
+						<select name="subject" id="subject" class="animated">
+							<option value="Support">Support</option>
+							<option value="a Sale">Sales</option>
+							<option value="a Bug fix">Report a bug</option>
+						</select>
+					</div>
+
+
+					<!-- row -->
+					<div class="col-1-1">
+						<label for="comments" accesskey="C"><em class="formz-req">*</em>Your comments</label>
+						<textarea name="comments" cols="40" rows="3" id="comments" class="animated"></textarea>
+					</div>
+
+
+					<!-- row -->
+					<div class="col-1-1">
+						<p><em class="formz-req">*</em>Are you human?</p>
+						<label for="verify" accesskey="V">3 + 1 =</label>
+						<input name="verify" type="text" id="verify" size="4" value="" class="animated"/>
+					</div>
+
+
+					<!-- row -->
+					<div class="col-1-1">
+						<div id="message"></div>
+					</div>
+
+
+					<!-- row -->
+					<div class="col-1-1">
+						<input type="submit" class="submit btn" id="submit" value="Submit" />
+					</div>
+
+				</fieldset>
+			</form>
+
+
+
+
+
+
 
 		<form class="formz" action="" parsley-validate novalidate >
 			<!-- media request-->
@@ -52,15 +123,15 @@
 
 				<!-- row -->
 				<div class="col-1-3">
-					<label>Publishing date<em class="animated formz-req">*</em></label>
+					<label>Publishing date<em class="formz-req">*</em></label>
 					<input class="animated" type="text" name="" placeholder="Fill up the field" required parsley-error-message="*** You must enter a name ***" parsley-error-container="#errors-box p"/>
 				</div>
 				<div class="col-1-3">
-					<label>Publishing date<em class="animated formz-req">*</em></label>
+					<label>Publishing date<em class="formz-req">*</em></label>
 					<input class="animated" type="text" name="" placeholder="Fill up the field" required parsley-error-message="*** You must enter a name ***" parsley-error-container="#errors-box p"/>
 				</div>
 				<div class="col-1-3">
-					<label>Is it urgent?<em class="animated formz-req">*</em></label>
+					<label>Is it urgent?<em class="formz-req">*</em></label>
 					<ul class="animated formz-list">
 						<li><label><input name="radio-01" type="radio"/>Yes</label></li>
 						<li><label><input name="radio-01" type="radio"/>No</label></li>
@@ -91,21 +162,21 @@
 			<fieldset>
 				<legend>Legend</legend>
 				<div class="col-1-1">
-					<label>Field Label <em class="animated formz-req">*</em></label>
+					<label>Field Label <em class="formz-req">*</em></label>
 					<input class="animated" type="text" name="" placeholder="Fill up the field"/>
 				</div>
 				<div class="col-1-1">
-					<label>Field Label <em class="animated formz-req">*</em></label>
+					<label>Field Label <em class="formz-req">*</em></label>
 					<textarea class="animated" rows="" cols=""></textarea>
 				</div>
 				<div class="col-1-1">
-					<label>Field Label <em class="animated formz-req">*</em></label>
+					<label>Field Label <em class="formz-req">*</em></label>
 					<input type="text" name="" class="animated formz-small" placeholder="Fill up the field"/>
 					<input type="text" name="" class="animated formz-medium" placeholder="Fill up the field"/>
 					<input class="animated btn" type="submit" title="Send" placeholder="Send"/>
 				</div>
 				<div class="col-1-1">
-					<label>Field Label <em class="animated formz-req">*</em></label>
+					<label>Field Label <em class="formz-req">*</em></label>
 					<input type="text" name="" class="animated formz-small" placeholder="Fill up the field"/>
 					<select class="animated formz-small">
 						<option>Select</option>
@@ -114,7 +185,7 @@
 					</select>
 				</div>
 				<div class="col-1-1">
-					<label>Field Label <em class="animated formz-req">*</em></label>
+					<label>Field Label <em class="formz-req">*</em></label>
 					<select class="animated formz-small">
 						<option>Select</option>
 						<option>Select</option>
@@ -130,7 +201,7 @@
 					<input class="animated btn" type="submit" title="Send" placeholder="Send"/>
 				</div>
 				<div class="col-1-1">
-					<label>Field Label <em class="animated formz-req">*</em></label>
+					<label>Field Label <em class="formz-req">*</em></label>
 					<input type="file" class="animated formz-small" placeholder="Fill up the field"/>
 				</div>
 
@@ -138,7 +209,7 @@
 
 				<!-- borwse clone -->
 				<div class="col-1-1 browse">
-					<label>Field Label <em class="animated formz-req">*</em></label>
+					<label>Field Label <em class="formz-req">*</em></label>
 					<input type="file" class="animated formz-small input-01 hidden" placeholder="Fill up the field"/>
 					<input type="text" name="" class="animated formz-small" placeholder="" disabled/>
 					<span class="btn browse-01">Browse</span>
@@ -147,7 +218,7 @@
 
 
 				<div class="col-1-1">
-					<label>Field Label <em class="animated formz-req">*</em></label>
+					<label>Field Label <em class="formz-req">*</em></label>
 					<ul class="animated formz-list">
 						<li><label><input name="checkbox-01" type="checkbox"/>Option 01</label></li>
 						<li><label><input name="checkbox-01" type="checkbox"/>Option 02</label></li>
@@ -157,7 +228,7 @@
 				</div>
 
 				<div class="col-1-1">
-					<label>Field Label <em class="animated formz-req">*</em></label>
+					<label>Field Label <em class="formz-req">*</em></label>
 					<ul class="animated formz-list">
 						<li><label><input name="radio-01" type="radio"/>Option 01</label></li>
 						<li><label><input name="radio-01" type="radio"/>Option 02</label></li>
@@ -174,7 +245,7 @@
 			<fieldset>
 				<legend>4 columns col form system</legend>
 				<div class="col-1-1">
-					<label>1-1 <em class="animated formz-req">*</em></label>
+					<label>1-1 <em class="formz-req">*</em></label>
 					<input class="animated" type="text" name="" placeholder="Fill up the field"/>
 				</div>
 
@@ -182,25 +253,25 @@
 
 
 				<div class="col-1-2">
-					<label>1-2 <em class="animated formz-req">*</em></label>
+					<label>1-2 <em class="formz-req">*</em></label>
 					<input class="animated" type="text" name="" placeholder="Fill up the field"/>
 				</div>
 				<div class="col-1-2">
-					<label>1-2 <em class="animated formz-req">*</em></label>
+					<label>1-2 <em class="formz-req">*</em></label>
 					<input class="animated" type="text" name="" placeholder="Fill up the field"/>
 				</div>
 
 
 				<div class="col-1-3">
-					<label>1-3 <em class="animated formz-req">*</em></label>
+					<label>1-3 <em class="formz-req">*</em></label>
 					<input class="animated" type="text" name="" placeholder="Fill up the field"/>
 				</div>
 				<div class="col-1-3">
-					<label>1-3 <em class="animated formz-req">*</em></label>
+					<label>1-3 <em class="formz-req">*</em></label>
 					<input class="animated" type="text" name="" placeholder="Fill up the field"/>
 				</div>
 				<div class="col-1-3">
-					<label>1-3 <em class="animated formz-req">*</em></label>
+					<label>1-3 <em class="formz-req">*</em></label>
 					<input class="animated" type="text" name="" placeholder="Fill up the field"/>
 				</div>
 
@@ -227,8 +298,6 @@
 
 
 
-
-
 				<div class="col-1-5">
 					<label>1-5</label>
 					<input class="animated" type="text" name="" placeholder=""/>
@@ -251,6 +320,7 @@
 				</div>
 
 
+
 				<div class="col-1-6">
 					<label>1-6</label>
 					<input class="animated" type="text" name="" placeholder=""/>
@@ -275,67 +345,66 @@
 					<label>1-6</label>
 					<input class="animated" type="text" name="" placeholder=""/>
 				</div>
-
-
-
-
-
-
-
-
 
 			</fieldset>
+
+
+
 			<fieldset>
 				<legend>Message box</legend>
 				<div class="col-1-1">
-					<div class="animated formz-msg-info">
-						<i class="animated fontawesome-exclamation-sign left"></i>
+					<div class="formz-msg-info">
+						<i class="fontawesome-exclamation-sign left"></i>
 						<h5>Information Message</h5>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
 					</div>
 				</div>
 				<div class="col-1-1">
-					<div class="animated formz-msg-warning">
-						<i class="animated fontawesome-warning-sign left"></i>
+					<div class="formz-msg-warning">
+						<i class="fontawesome-warning-sign left"></i>
 						<h5>Warning Message</h5>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
 					</div>
 				</div>
 				<div class="col-1-1">
-					<div class="animated formz-msg-error">
-						<i class="animated fontawesome-remove left"></i>
+					<div class="formz-msg-error">
+						<i class="fontawesome-remove left"></i>
 						<!-- <h5>Error Message</h5> -->
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
 					</div>
 				</div>
 				<div class="col-1-1">
-					<div class="animated formz-msg-success">
-						<i class="animated fontawesome-ok left"></i>
+					<div class="formz-msg-success">
+						<i class="fontawesome-ok left"></i>
 						<h5>Success Message</h5>
 						<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p> -->
 					</div>
 				</div>
 			</fieldset>
+
+
+
+
 			<fieldset>
 				<legend>Example of form using Message Box (single)</legend>
 				<div class="col-1-1">
-					<div class="animated formz-msg-error">
+					<div class="formz-msg-error">
 						<h5>Please enter a valid <strong>E-Mail ID</strong>.</h5>
 					</div>
 				</div>
 				<div class="col-1-1">
-					<label>Login<em class="animated formz-req">*</em></label>
+					<label>Login<em class="formz-req">*</em></label>
 					<input type="text" name="" class="animated formz-error" placeholder="Fill up the field"/>
 				</div>
 			</fieldset>
 			<fieldset>
 				<legend>Example</legend>
 				<div class="col-1-2">
-					<label>Login<em class="animated formz-req">*</em></label>
+					<label>Login<em class="formz-req">*</em></label>
 					<input type="text" name="" class="animated formz-error" placeholder="Fill up the field"/>
 				</div>
 				<div class="col-1-2">
-					<label>Password <em class="animated formz-req">*</em></label>
+					<label>Password <em class="formz-req">*</em></label>
 					<input type="Password" name="Password" class="animated formz-error" placeholder="Fill up the field"/>
 				</div>
 				<div class="col-1-1">
@@ -357,11 +426,11 @@
 				<legend>Login or Register</legend>
 				<div class="animated login">
 					<div class="col-1-1">
-						<label>Login<em class="animated formz-req">*</em></label>
+						<label>Login<em class="formz-req">*</em></label>
 						<input class="animated" type="text" name="" placeholder="Fill up the field"/>
 					</div>
 					<div class="col-1-1 clear">
-						<label>Password <em class="animated formz-req">*</em></label>
+						<label>Password <em class="formz-req">*</em></label>
 						<input class="animated" type="Password" name="Password" placeholder="Fill up the field"/>
 					</div>
 					<div class="col-1-1 clear">
@@ -378,7 +447,7 @@
 			<fieldset>
 				<legend>News letter</legend>
 				<div class="col-1-1">
-					<label>Email <em class="animated formz-req">*</em></label>
+					<label>Email <em class="formz-req">*</em></label>
 					<input type="text" name="" class="animated formz-medium" placeholder="email@example.com"/>
 					<input class="animated btn" type="submit" title="Add me to newsletter" placeholder="Add me to newsletter"/>
 				</div>
@@ -387,38 +456,38 @@
 				<legend>Create an account</legend>
 
 				<div class="col-1-2">
-					<label>First Name <em class="animated formz-req">*</em></label>
+					<label>First Name <em class="formz-req">*</em></label>
 					<input class="animated" type="text" name="" placeholder="Fill up the field"/>
 				</div>
 				<div class="col-1-2">
-					<label>Last Name <em class="animated formz-req">*</em></label>
-					<input class="animated" type="text" name="" placeholder="Fill up the field"/>
-				</div>
-				<!-- row -->
-
-				<div class="col-1-2">
-					<label>E-mail Address <em class="animated formz-req">*</em></label>
-					<input class="animated" type="text" name="" placeholder="Fill up the field"/>
-				</div>
-				<div class="col-1-2">
-					<label>Confirm E-mail Address <em class="animated formz-req">*</em></label>
+					<label>Last Name <em class="formz-req">*</em></label>
 					<input class="animated" type="text" name="" placeholder="Fill up the field"/>
 				</div>
 				<!-- row -->
 
 				<div class="col-1-2">
-					<label>Password <em class="animated formz-req">*</em></label>
+					<label>E-mail Address <em class="formz-req">*</em></label>
+					<input class="animated" type="text" name="" placeholder="Fill up the field"/>
+				</div>
+				<div class="col-1-2">
+					<label>Confirm E-mail Address <em class="formz-req">*</em></label>
+					<input class="animated" type="text" name="" placeholder="Fill up the field"/>
+				</div>
+				<!-- row -->
+
+				<div class="col-1-2">
+					<label>Password <em class="formz-req">*</em></label>
 					<input class="animated" type="Password" name="Password" placeholder="Fill up the field"/>
 				</div>
 				<div class="col-1-2">
-					<label>Confirm Password <em class="animated formz-req">*</em></label>
+					<label>Confirm Password <em class="formz-req">*</em></label>
 					<input class="animated" type="Password" name="Password" placeholder="Fill up the field"/>
 				</div>
 				<!-- row -->
 
 
 				<div class="col-1-1">
-					<label>Type what you see in the box<em class="animated formz-req">*</em></label>
+					<label>Type what you see in the box<em class="formz-req">*</em></label>
 					<input class="solid animated formz-small" type="text" name="" placeholder="1 + 5 =" disabled/>
 					<input class="animated formz-small" type="text" name="" placeholder="Answer"/>
 				</div>
@@ -455,19 +524,19 @@
 					</select>
 				</div>
 				<div class="col-1-3">
-					<label>Your name <em class="animated formz-req">*</em></label>
+					<label>Your name <em class="formz-req">*</em></label>
 					<input class="animated" type="text" name="" placeholder="Fill up the field"/>
 				</div>
 				<div class="col-1-3">
-					<label>Your e-mail address <em class="animated formz-req">*</em></label>
+					<label>Your e-mail address <em class="formz-req">*</em></label>
 					<input class="animated" type="text" name="" placeholder="Fill up the field"/>
 				</div>
 				<div class="col-1-1">
-					<label>Subject <em class="animated formz-req">*</em></label>
+					<label>Subject <em class="formz-req">*</em></label>
 					<input class="animated" type="text" name="" placeholder="Fill up the field"/>
 				</div>
 				<div class="col-1-1 clear">
-					<label>Please type your message below <em class="animated formz-req">*</em></label>
+					<label>Please type your message below <em class="formz-req">*</em></label>
 					<textarea class="animated" name="" id="" cols="30" rows="10"></textarea>
 				</div>
 				<div class="col-1-1">
@@ -481,4 +550,6 @@
 </section>
 
 </div>
-<?php include("includes/_footer.php");?>
+
+<div id="googleMap" style="width:1280px;height:720px;"></div>
+<?php include("include/_footer.php");?>
