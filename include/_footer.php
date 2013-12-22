@@ -52,6 +52,10 @@ echo '
 
 	<script src="assets/js/04-smoothScroll.js"></script>
 
+	<script src="assets/js/04-ajaxml.js"></script>
+
+	<script src="assets/js/04-ajaxml-hashchange.js"></script>
+
 	<script src="assets/js/10-main.js"></script>
 
 	';

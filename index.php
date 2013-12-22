@@ -32,8 +32,10 @@
 				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				<a class="btn black" href="formz.php">FormZ</a>
-				<a class="btn black" href="404.php">404</a>
+				<a class="btn black" href="somthig.php">404</a>
 				<a class="btn black" href="map.php">map</a>
+				<a class="btn load" href="include/content.php" into="target1">load more content</a>
+
 			</div><!-- end box -->
 		</div><!-- end col -->
 
@@ -50,7 +52,7 @@
 		<div class="col-1-2">
 			<div class="box">
 				<h2>Title sample</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				<p id="target1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -176,6 +178,12 @@
 		</div><!-- end col -->
 
 	</div><!-- end page -->
+
+
+
+<div id="googleMap" style="width:5px;height:5px;"></div>
+
+
 
 <?php include("include/_footer.php");?>
 
