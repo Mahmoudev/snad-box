@@ -6,6 +6,7 @@
 
 <div class="JS">
 	<script src="assets/js/01-jquery.js"></script>
+	<script src="assets/js/01-cssBrowserSelector.js"></script>
 	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 	<script>$(window).load(function() {$("#status").fadeOut();$("#preloader").delay(350).fadeOut("slow");})</script>
 
@@ -20,13 +21,9 @@ echo '
 } else {
 echo '
 
-	<!--<script src="assets/js/02-api-gmap.js"></script>-->
-
 	<script src="assets/js/02-cycle2.js"></script>
 
 	<script src="assets/js/02-debouncedResize.js"></script>
-
-	<script src="assets/js/02-gmap3.js"></script>
 
 	<script src="assets/js/02-jqueryEasing.js"></script>
 

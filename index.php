@@ -4,9 +4,19 @@
 
 <body>
 
+
+<!-- preloader + ie upgrade  -->
 <div id="preloader">
 	<div id="status">&nbsp;</div>
 </div>
+
+<div id="upgrade">
+	<div id="message">
+		<img src="assets/images/upgrade.png" width="100%" border="0" />
+	</div>
+</div>
+
+
 
 
 
@@ -21,6 +31,8 @@
 
 	<div class="page" id="box1">
 		<h1>This is a title</h1>
+		<h1>Colored title per browser</h1>
+
 		<div class="col-1-2">
 			<div class="box">
 				<h2>Title sample one</h2>

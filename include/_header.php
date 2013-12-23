@@ -5,19 +5,30 @@
 <head>
 	<title>Sandbox</title>
 	<style>
-	#preloader {
-		position: fixed;
-		top: 0; left: 0; right: 0; bottom: 0;
-		background: #fff;
-		z-index: 999999;
-	}
-	#status {
-		width: 200px; height: 200px;
-		position: absolute;
-		left: 50%; top: 50%;
-		background: url(assets/images/css/preload.gif) no-repeat center;
-		margin: -100px 0 0 -100px;
-	}
+		#preloader {
+			position: fixed;
+			top: 0; left: 0; right: 0; bottom: 0;
+			background: #fff;
+			z-index: 999999;
+		}
+			#preloader #status {
+				width: 200px; height: 200px;
+				position: absolute;
+				left: 50%; top: 50%;
+				background: url(assets/images/css/preload.gif) no-repeat center;
+				margin: -100px 0 0 -100px;
+			}
+		#upgrade {
+			position: fixed;
+			top: 0; left: 0; right: 0; bottom: 0;
+			background: #EAEDF1;
+			z-index: 999999;
+		}
+			#upgrade #message {
+				width: 100%;
+				max-width: 1000px;
+				margin: 0 auto;
+			}
 	</style>
 
 	<!-- meta -->
