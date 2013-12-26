@@ -111,7 +111,7 @@
 
 		<div class="clear"></div>
 
-		<div class="col-1-2 animated-ed bounceInLeft delay">
+		<div class="col-1-2 animated-ed fullscreen-image delay">
 			<div class="box">
 				<h2>Title sample</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -120,6 +120,7 @@
 				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<img src="http://lorempixel.com/1920/1080/technics/" alt="" width="800" height="600" />
 				<p><a class="btn" href="#">Button</a></p>
 			</div><!-- end box -->
 		</div><!-- end col -->

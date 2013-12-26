@@ -14,6 +14,7 @@
 	-o-transition: 200ms linear 0s;
 	transition: 200ms linear 0s;
 	-webkit-transform: translateZ(0); /*make problems some times*/
+	-webkit-backface-visibility: hidden;
 
 }
 .animated-slow {
@@ -22,6 +23,7 @@
 	-o-transition: 300ms linear 0s;
 	transition: 300ms linear 0s;
 	-webkit-transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
 }
 
  .fadeIn {
@@ -36,7 +38,7 @@
 	animation-fill-mode:forwards;
 }
 
-html.ie9 .fadeIn {opacity:1 !important;}
+.ie9 .fadeIn {opacity:1 !important;}
 
 /* Animation Times - Time for image to fade in */
  .fadeIn-1s {
@@ -137,6 +139,7 @@ html.ie9 .fadeIn {opacity:1 !important;}
 	-moz-animation-delay: .3s;
 	animation-delay: .3s;
 	-webkit-transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
 }
 
 .delay {
@@ -214,12 +217,13 @@ html.ie9 .fadeIn {opacity:1 !important;}
 	-o-animation-duration: 1s;
 	animation-duration: 1s;
 	-webkit-transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
 	opacity: 1 !important;
 }
 
 .bounceInLeft {opacity: 0;}
 
-html.ie9 .bounceInLeft {opacity: 1 !important;}
+.ie9 .bounceInLeft {opacity: 1 !important;}
 
 @-webkit-keyframes bounceInRight {
 	0% {
@@ -284,12 +288,13 @@ html.ie9 .bounceInLeft {opacity: 1 !important;}
 	-o-animation-duration: 1s;
 	animation-duration: 1s;
 	-webkit-transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
 	opacity: 1 !important;
 }
 
 .bounceInRight {opacity: 0;}
 
-html.ie9 .bounceInRight {opacity: 1 !important;}
+.ie9 .bounceInRight {opacity: 1 !important;}
 
 @-webkit-keyframes bounceIn {
 	0% {
@@ -354,12 +359,13 @@ html.ie9 .bounceInRight {opacity: 1 !important;}
 	-o-animation-duration: 1s;
 	animation-duration: 1s;
 	-webkit-transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
 	opacity: 1 !important;
 }
 
 .bounceIn {opacity: 0;}
 
-html.ie9 .bounceIn {opacity: 1 !important;}
+.ie9 .bounceIn {opacity: 1 !important;}
 
 @-moz-keyframes puffIn {
 	0% {
@@ -522,12 +528,13 @@ html.ie9 .bounceIn {opacity: 1 !important;}
 	-o-animation-duration: 1s;
 	animation-duration: 1s;
 	-webkit-transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
 	opacity: 1 !important;
 }
 
 .puffIn {opacity: 0;}
 
-html.ie9 .puffIn {opacity: 1 !important;}
+.ie9 .puffIn {opacity: 1 !important;}
 
 @-webkit-keyframes slide {
 	0% {-webkit-transform: translateY(100%);}
@@ -560,12 +567,13 @@ html.ie9 .puffIn {opacity: 1 !important;}
 	-o-animation-duration: 1s;
 	animation-duration: 1s;
 	-webkit-transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
 	opacity: 1 !important;
 }
 
 .slide {opacity: 0;}
 
-html.ie9 .slide {opacity: 1 !important;}
+.ie9 .slide {opacity: 1 !important;}
 
 @-webkit-keyframes bounceInDown {
 	0% {
@@ -630,12 +638,13 @@ html.ie9 .slide {opacity: 1 !important;}
 	-o-animation-duration: 1s;
 	animation-duration: 1s;
 	-webkit-transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
 	opacity: 1 !important;
 }
 
 .bounceInDown {opacity: 0;}
 
-html.ie9 .bounceInDown {opacity: 1 !important;}
+.ie9 .bounceInDown {opacity: 1 !important;}
 
 .animated-flip {
 	-webkit-animation-name: flip;
@@ -648,12 +657,13 @@ html.ie9 .bounceInDown {opacity: 1 !important;}
 	-o-animation-duration: 1s;
 	animation-duration: 1s;
 	-webkit-transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
 	opacity: 1 !important;
 }
 
 .flip {opacity: 0;}
 
-html.ie9 .flip {opacity: 1 !important;}
+.ie9 .flip {opacity: 1 !important;}
 
 /*openDownLeft In*/
 
@@ -733,9 +743,10 @@ html.ie9 .flip {opacity: 1 !important;}
 	-o-animation-duration: 1s;
 	animation-duration: 1s;
 	-webkit-transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
 	opacity: 1 !important;
 }
 
 .holeIn {opacity: 0;}
 
-html.ie9 .holeIn {opacity: 1 !important;}
+.ie9 .holeIn {opacity: 1 !important;}

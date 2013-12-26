@@ -164,10 +164,10 @@ nav{
 
 
 /*-----------------------------------------------
-	broser based
+	browser based
 -----------------------------------------------*/
 
-.ie h1 {
+/*.ie h1 {
   background-color: yellow
 }
 .ie7 h1 {
@@ -178,3 +178,4 @@ nav{
   background-color: orange
 }
 
+*/
