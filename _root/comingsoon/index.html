@@ -1,59 +1,32 @@
 ﻿<!doctype html>
 <html class="no-js">
 <head>
-  <meta charset="utf-8">
-
-  <!-- Page title -->
-  <title>Coming Soon</title>
-
-  <link rel="shortcut icon" href="soon/favicon.png">
-
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="soon/style.css"> <!-- Regular stylesheet -->
-
-  <!-- Fonts -->
-  <link href="http://fonts.googleapis.com/css?family=Quattrocento" rel="stylesheet" type="text/css">
-
-  <!-- JavaScript -->
-  <script src="soon/jquery.js"></script> <!-- Load jQuery library -->
-  <script src="soon/modernizr.js"></script> <!-- Load Modernizr -->
+	<meta charset="utf-8">
+	<title>Coming Soon</title>
+	<link rel="shortcut icon" href="soon/favicon.png">
+	<link rel="stylesheet" href="soon/style.css">
+	<!-- <link href="http://fonts.googleapis.com/css?family=Quattrocento" rel="stylesheet" type="text/css"> -->
+	<link href='http://fonts.googleapis.com/css?family=Exo+2:400,600' rel='stylesheet' type='text/css'>
+	<script src="soon/jquery.js"></script>
+	<script src="soon/modernizr.js"></script>
 </head>
-
 <body>
-  <div id="pattern"><div id="gradient">
-	<!-- Main page -->
-    <div id="main_page">
-
-	  <!-- Header -->
-	  <header>
-	    <h1>Website Name Here</h1> <!-- Set the page title -->
-	  </header>
-
-	  <!-- Additional content -->
-	  <div id="content"> &nbsp;
-
-		  <!-- Custom text -->
-		  <section class="text">
-			<p>coming soon</p>
-		  </section>
-		  <!-- Custom text end -->
-
-		  <!-- Progress -->
-		  <script>
-		    $(function() {
-				$("#progressbar").animate({width: $(".progress h2").text()}, 2000);
-			});
-		  </script>
-		  <section class="progress">
-			<div id="progressbar"></div>
-			<h2>60%</h2> <!-- Set your progress, must be percentage -->
-		  </section>
-		  <!-- Progress end -->
-
-
-  </div></div>
-
-</script>
-
+	<div id="pattern"><div id="gradient">
+		<div id="main_page">
+			<header>
+				<h1>Website Name Here</h1>
+			</header>
+			<!-- Additional content -->
+			<div id="content"> &nbsp;
+				<!-- Custom text -->
+				<section class="text"><p>coming soon</p></section>
+				<script>
+				$(function() {$("#progressbar").animate({width: $(".progress h2").text()}, 2000);});</script>
+				<section class="progress">
+					<div id="progressbar"></div>
+					<h2>60%</h2>
+				</section>
+			</div>
+		</div>
 </body>
 </html>

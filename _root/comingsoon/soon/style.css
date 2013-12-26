@@ -34,7 +34,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
 input, select { vertical-align: middle; }
 
-body { font:13px/1.231 sans-serif; *font-size:small; } 
+body { font:13px/1.231 sans-serif; *font-size:small; }
 /*select, input, textarea, button { font:99% sans-serif; }*/
 pre, code, kbd, samp { font-family: monospace, sans-serif; }
 
@@ -53,7 +53,7 @@ sub { bottom: -0.25em; }
 
 pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; padding: 15px; }
 textarea { overflow: auto; }
-.ie6 legend, .ie7 legend { margin-left: -7px; } 
+.ie6 legend, .ie7 legend { margin-left: -7px; }
 input[type="radio"] { vertical-align: text-bottom; }
 input[type="checkbox"] { vertical-align: bottom; }
 .ie7 input[type="checkbox"] { vertical-align: baseline; }
@@ -90,8 +90,8 @@ html {
 	height: 100%;
 }
 body {
-	background-image: 
-		
+	background-image:
+
 		url(bg_pattern.png),
 		url(bg_gradient_down.png),
 		url(bg_gradient_up.png),
@@ -100,8 +100,7 @@ body {
 	background-repeat: repeat, repeat-x, repeat-x;
 	height: 100%;
 	color: #fff;
-	font-family: "Cantarell", Calibri, Verdana, sans-serif;
-	font-size: 14px;
+	font-family: "Exo 2", Arial, serif;	font-size: 14px;
 	text-shadow: 1px 2px 3px #333;
 }
 	#background_image, #background_image img {
@@ -114,11 +113,11 @@ body {
 	}
 	#pattern {
 		height: 100%;
-		width: 100%;	
+		width: 100%;
 		display: table;
 	}
 		.no-multiplebgs #pattern, .active_bg_image #pattern {
-			background: url(bg_pattern.png) repeat;	
+			background: url(bg_pattern.png) repeat;
 		}
 	#gradient {
 		height: 100%;
@@ -127,7 +126,7 @@ body {
 		vertical-align: middle;
 	}
 		.no-multiplebgs #gradient, .active_bg_image #gradient {
-			background: url(bg_gradient_up.png) repeat-x;	
+			background: url(bg_gradient_up.png) repeat-x;
 		}
 
 a, a:hover, a:visited {
@@ -158,7 +157,7 @@ body .button {
 	}
 
 
-header {	
+header {
 	margin: 0 auto;
 	text-align: center;
 	background-position: bottom center no-repeat;
@@ -172,7 +171,6 @@ header {
 		display: inline;
 		font-size: 40px;
 		text-shadow: 2px 3px 4px #000;
-		font-family: "Quattrocento", Georgia, serif;
 	}
 
 #content {
@@ -204,7 +202,6 @@ header {
 					line-height: 53px;
 					margin-bottom: 8px;
 					background: url(countdown.png) top center no-repeat;
-					font-family: "Raleway", Arial, sans-serif;
 					text-shadow: 0px 0px 10px #fff;
 				}
 	#main_page .progress {
@@ -222,11 +219,10 @@ header {
 		.progress h2 {
 			position: absolute;
 			width: 452px;
-			line-height: 43px;
+			line-height: 40px;
 			text-align: center;
 			text-shadow: 0px 0px 10px #fff;
 			margin: 0;
-			font-family: "Raleway", Arial, sans-serif;
 			font-size: 30px;
 		}
 	.text {
@@ -234,8 +230,6 @@ header {
 		.text p {
 			text-align: center;
 			font-size: 30px;
-			color: rgba(255,255,255,0.9);
-			font-family: "Quattrocento", Georgia, serif;
 		}
 	.description {
 	}
@@ -311,7 +305,6 @@ header {
 				line-height: 25px;
 				color: #fff;
 				width: 320px;
-				font-family: "Cantarell", Calibri, Verdana, sans-serif;
 				font-size: 14px;
 			}
 				.subscribe input.submit {
@@ -320,7 +313,7 @@ header {
 					width: auto;
 					margin: 4px;
 					height: 27px;
-					line-height: 27px;					
+					line-height: 27px;
 					font-size: 14px;
 					background-repeat: repeat-x;
 					-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;
@@ -329,7 +322,7 @@ header {
 		.subscribe p {
 			display: none;
 			padding-bottom: 10px;
-		}		
+		}
 	.more_info {
 		text-align: center;
 	}
@@ -340,8 +333,8 @@ header {
 			.no-multiplebgs .more_info  .button {
 				background: url(button.png) repeat-x;
 			}
-		
-			
+
+
 #more_info_page {
 	display: none;
 	width: 780px;
@@ -356,7 +349,7 @@ header {
 		left: 0;
 		z-index: -1;
 	}
-	#more_info_page .button {			
+	#more_info_page .button {
 		background: url(button.png) repeat-x,
 			url(button_arrow_right.png) 10px center no-repeat;
 		margin: 10px;
@@ -379,12 +372,10 @@ header {
 		h2 {
 			font-size: 35px;
 			margin: 10px 0 10px 0;
-			font-family: "Raleway", Arial, sans-serif;
 		}
 		h3 {
 			font-size: 20px;
 			margin: 10px 0 5px 0;
-			font-family: "Raleway", Arial, sans-serif;
 		}
 		.social {
 			margin-right: 3px;
@@ -404,11 +395,9 @@ header {
 					font-size: 20px;
 					color: #fff;
 					margin-bottom: 5px;
-					font-family: "Raleway", Arial, sans-serif;
 				}
 					.person em {
 						font-size: 14px;
-						font-family: "Cantarell", Calibri, Verdana, sans-serif;
 						font-style: italic;
 					}
 			.person img {
@@ -425,7 +414,7 @@ header {
 			.address .fn {
 				font-weight: bold;
 			}
-		
+
 /* Customization */
 #customization {
 	width: 150px;
@@ -443,7 +432,6 @@ header {
 	#customization h2 {
 		margin-bottom: 15px;
 		font-size: 18px;
-		font-family: "Cantarell", Calibri, Verdana, sans-serif;
 	}
 	.colors {
 	}
@@ -460,7 +448,7 @@ header {
 		margin: 2px;
 		border: 3px solid rgba(255,255,255,0.3);
 		cursor: pointer;
-	}		
+	}
 	#customization form {
 	}
 		#customization ul {
@@ -493,8 +481,8 @@ header {
 		.no-rgba #customization hr {
 			display: none;
 		}
-		
-		
+
+
 /*  Helpers  */
 .hidden { display: none; }
 .clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
@@ -505,11 +493,11 @@ header {
 /*  Print styles  */
 @media print {
   * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important;
-  -ms-filter: none !important; } 
+  -ms-filter: none !important; }
   a, a:visited { color: #444 !important; text-decoration: underline; }
   a[href]:after { content: " (" attr(href) ")"; }
   abbr[title]:after { content: " (" attr(title) ")"; }
-  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }
   pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
   thead { display: table-header-group; }
   tr, img { page-break-inside: avoid; }
@@ -522,4 +510,4 @@ header {
 body { background-color: #417E89; }
 header { background-image: url(bg_header_blue.png); }
 #progressbar { background-image: url(progressbar_fill_blue.png); }
-.subscribe input.submit { background-image: url(form_button_green.png); } 
+.subscribe input.submit { background-image: url(form_button_green.png); }
