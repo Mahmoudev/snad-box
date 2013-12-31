@@ -111,7 +111,7 @@
 
 		<div class="clear"></div>
 
-		<div class="col-1-2 animated-ed fullscreen-image delay">
+		<div class="col-1-2 animated-ed bounceInLeft delay">
 			<div class="box">
 				<h2>Title sample</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

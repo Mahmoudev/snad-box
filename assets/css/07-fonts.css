@@ -5,21 +5,21 @@
 
 @font-face {
 	font-family: 'Swis72';
-	src: url('../fonts/swissck.eot');
-	src: url('../fonts/swissck.eot') format('embedded-opentype'),
-		 url('../fonts/swissck.woff') format('woff'),
-		 url('../fonts/swissck.ttf') format('truetype'),
-		 url('../fonts/swissck.svg#Swis72') format('svg');
+	src: url('../fonts/en/swissck.eot');
+	src: url('../fonts/en/swissck.eot') format('embedded-opentype'),
+		 url('../fonts/en/swissck.woff') format('woff'),
+		 url('../fonts/en/swissck.ttf') format('truetype'),
+		 url('../fonts/en/swissck.svg#Swis72') format('svg');
 }
 
 
 /*
 @font-face {
 	font-family: 'dinRegular';
-	src: url('../fonts/din-regular.eot');
-	src: url('../fonts/din-regular.eot') format('embedded-opentype'),
-		 url('../fonts/din-regular.woff') format('woff'),
-		 url('../fonts/din-regular.ttf') format('truetype');
+	src: url('../fonts/en/din-regular.eot');
+	src: url('../fonts/en/din-regular.eot') format('embedded-opentype'),
+		 url('../fonts/en/din-regular.woff') format('woff'),
+		 url('../fonts/en/din-regular.ttf') format('truetype');
 }
 */
 

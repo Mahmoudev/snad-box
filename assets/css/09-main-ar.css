@@ -1,21 +1,20 @@
 /*
-
 @font-face {
 	font-family: 'geDinarMed';
-	src: url('../fonts/ge-dinar-med.eot');
-	src: url('../fonts/ge-dinar-med.eot') format('embedded-opentype'),
-		 url('../fonts/ge-dinar-med.woff') format('woff'),
-		 url('../fonts/ge-dinar-med.ttf') format('truetype'),
-		 url('../fonts/ge-dinar-med.svg#geDinarMed') format('svg');
+	src: url('../fonts/ar/ge-dinar-med.eot');
+	src: url('../fonts/ar/ge-dinar-med.eot') format('embedded-opentype'),
+		 url('../fonts/ar/ge-dinar-med.woff') format('woff'),
+		 url('../fonts/ar/ge-dinar-med.ttf') format('truetype'),
+		 url('../fonts/ar/ge-dinar-med.svg#geDinarMed') format('svg');
 }
 
 
 @font-face {
     font-family: 'AlMohanad';
-    src: url('../fonts/al-mohanad.eot');
-    src: url('../fonts/al-mohanad.eot') format('embedded-opentype'),
-         url('../fonts/al-mohanad.woff') format('woff'),
-         url('../fonts/al-mohanad.ttf') format('truetype');
+    src: url('../fonts/ar/al-mohanad.eot');
+    src: url('../fonts/ar/al-mohanad.eot') format('embedded-opentype'),
+         url('../fonts/ar/al-mohanad.woff') format('woff'),
+         url('../fonts/ar/al-mohanad.ttf') format('truetype');
 }
 
 
