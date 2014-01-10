@@ -197,6 +197,10 @@ a.behance-icon:hover { background-color: #0066FF !important; }
 a.rss-icon:hover { background-color: #F79638 !important; }
 
 
+a[class*='-icon']:hover i {
+  color: #fff !important;
+}
+
 
 
 
